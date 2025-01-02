@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC Center</title>
+    <style>
+                body {
+            font-family: 'Poppins', sans-serif;
+            background-color:  #0b0d15;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #6a80d9;            
+            color: rgb(242, 255, 0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 17px;
+            margin: 20px;
+            font-weight: 900;
+            font-family: cursive;
+
+
+        }
+
+        header img {
+            margin-top: 2%;
+            float: left;
+            width: 15%;
+        }
+
+        header h1 {
+            font-size: 3.8rem;
+            margin: 0;           
+             text-shadow: 10px 9px 10px #000000;
+
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            text-shadow: 19px 15px 10px #000000;
+
+        }
+
+        .service {
+            background: #1c1f2b;            border: 2px solid transparent;
+            box-shadow: 10px 14px 18px 18px rgba(221, 217, 217, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .service:hover {
+            background-color: #0d1210;
+            border-color: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);;
+            transform: translateY(-15px);
+            /* border-color: brown; */
+            border-width: 5px;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+            /* color: #4CAF50; */
+        }
+
+        .service p {
+            font-size: 1rem;
+            font-weight: 900;
+
+            /* color: #666; */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0d1210;
+            color: rgb(225, 250, 0);
+            margin-top: 20px;
+            font-size: 50%;
+            text-shadow: 19px 12px 10px #776363;
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-size: 250%;
+        }
+        footer:hover{
+            background-color: #1c1f2b;
+        }
+        @media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header img {
+        width: 50%;
+        margin: 0 auto; /* Center the image */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 60%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+}
+
+        img{
+            width: 250px;
+        }
+        #demo{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 187, 255);
+            font-weight: 900;
+            font-family: cursive;
+            text-shadow: 10px 1px 10px #4c87af;
+        }
+        p{
+            text-shadow: 10px 9px 10px #000000;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="2201587.webp">
+        <h1>PK COMMUNICATION</h1>
+        <p>पता:
+
+            रामवापुर,
+            शराब की दुकान के सामने,
+            बहराइच, उत्तर प्रदेश</p>
+            
+    </header>
+
+    <p id = "demo">
+        हमारी प्रदान की जाने वाली सेवाएँ:
+    </p>
+
+    <section class="services">
+
+
+        <div class="service" style="color: rgb(255, 213, 0);">
+            <img src="sbi.png" alt="sbi">
+            
+            <p>यहाँ SBI बैंक में सभी का खाता खुलता है।</p>
+
+        </div>
+
+
+
+        <div class="service" style="color: red;">
+            <img src="train.png" alt="sbi">
+
+            
+            <p>यहाँ ट्रेन टिकट बुक होती है।</p>
+        </div>
+        <div class="service" style="color: rgb(255, 166, 0);">
+            <img src="Screenshot 2025-01-02 171052.png" alt="sbi"><br><br><br>
+
+            <p>यहाँ ई-स्टांप मिलता है।</p>
+        </div>
+
+
+
+        <div class="service" style="color: red;">
+            <img src="adhaar.webp" alt="sbi"><br><br><br>
+
+            <h3>१. आधार कार्ड सेवाएं</h3>
+            <p>२.नया आधार पंजीकरण</p>
+            <p>३.आधार अपडेट (नाम, पता, मोबाइल नंबर आदि)</p>
+            <p>४.आधार प्रिंट सेवाएं</p>
+
+        </div>
+
+
+        <div class="service"  class="card"  style="color: rgb(255, 247, 0);">
+            <img src="pan.webp" alt="sbi"><br><br><br>
+
+            <h3>१. पैन कार्ड सेवाएं</h3>
+            <p>२.नया पैन कार्ड आवेदन</p>
+            <p>३.पैन कार्ड सुधार/अपडेट</p>
+        </div>
+
+
+        <div class="service" style="color: rgb(0, 247, 0);">
+            <img src="birth.webp" alt="sbi"><br><br><br>
+
+            <h3>१. सरकारी प्रमाण पत्र</h3>
+            <p>२.जन्म प्रमाण पत्र</p>
+            <p>३.मृत्यु प्रमाण पत्र</p>
+            <p>४.जाति प्रमाण पत्र</p>
+            <p>५.आय प्रमाण पत्र</p>
+            <p>६.निवास प्रमाण पत्र</p>
+        </div>
+
+
+        <div class="service" style="color: rgb(238, 4, 250);">
+            <h3>१. पेंशन सेवाएं</h3>
+            <p>२.वृद्धावस्था पेंशन</p>
+            <p>३.विधवा पेंशन</p>
+            <p>४.दिव्यांग पेंशन</p>
+        </div>
+
+
+        <di४.v class="service" style="color: orange;">
+            <h3>१. राशन कार्ड सेवाएं</h3>
+            <p>२.नया राशन कार्ड आवेदन</p>
+            <p>३.राशन कार्ड विवरण अपडेट</p>
+        </di४.v>
+
+
+        <div class="service" style="color: pink;">
+            <h3२.>१. बैंकिंग सेवाएं</h3२.>
+            <p>३.२.खाता खोलना</p>
+            <p>४.३.नकद निकासी/जमा</p>
+            <p>४.मिनी स्टेटमेंट</p>
+            <p>५.बैलेंस पूछताछ (AEPS के माध्यम से)</p>
+        </div>
+
+
+        <div class="service" style="color: rgb(0, 247, 247);">
+            <h3>१. बीमा सेवाएं</h3>
+            <p>२.प्रधानमंत्री जीवन ज्योति बीमा योजना</p>
+            <p>३.प्रधानमंत्री सुरक्षा बीमा योजना</p>
+            <p>४.अटल पेंशन योजना</p>
+            <p>५.फसल बीमा</p>
+        </div>
+
+
+        <div class="service" style="color: rgb(173, 237, 11);">
+            <h3>१. यूटिलिटी बिल भुगतान</h3>
+            <p>२.बिजली के बिल</p>
+            <p>३.पानी के बिल</p>
+            <p>४.गैस कनेक्शन के बिल</p>
+            <p>५.मोबाइल और डीटीएच रिचार्ज</p>
+        </div>
+
+
+        <div class="service" style="color: magenta;">
+            <h3>१. शिक्षा और रोजगार सेवाएं</h3>
+            <p>२.ऑनलाइन परीक्षा पंजीकरण</p>
+            <p>३.प्रवेश पत्र प्रिंट करना</p>
+            <p>४.सरकारी नौकरियों के लिए आवेदन</p>
+            <p>५.कौशल विकास कार्यक्रम (PMKVY)</p>
+            <p>६.ऑनलाइन कोचिंग और ट्यूटोरियल</p>
+        </div>
+
+
+
+        <div class="service" style="color: cyan;">
+            <h3>१. डिजिटल सेवाएं</h3>
+            <p>२.डिजिटल साक्षरता कार्यक्रम</p>
+            <p>३.ऑनलाइन फॉर्म भरना</p>
+            <p>४.स्कैनिंग और फोटोकॉपी</p>
+            <p>५.प्रिंटिंग सेवाएं</p>
+        </div>
+
+
+
+        <div class="service" style="color: rgb(221, 218, 15);">
+            <h3>१. स्वास्थ्य सेवाएं</h3>
+            <p>२.डॉक्टर की अपॉइंटमेंट बुकिंग</p>
+            <p>३.टेलीमेडिसिन परामर्श</p>
+            <p>४.स्वास्थ्य बीमा योजनाएं</p>
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2021 PK Communication. All rights reserved by PIUSH KUMAR SINGH १. (OWNER).<BR>MOBILE NUMBER- 9760929004,9412830401</p>
+</body>
+</html>
